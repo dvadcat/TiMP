@@ -3,7 +3,7 @@
 
 bool isValid(const string& s)
 {
-    for(const auto &c:s) // цикл проходит по всему массиву и выдает сам объект этого массива
+    for(const auto &c:s) 
         if (!isalpha(c) )
             return false;
     return true;

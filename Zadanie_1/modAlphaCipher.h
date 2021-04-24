@@ -12,14 +12,14 @@ class modAlphaCipher
 {
 private:
     string numAlpha =
-        "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"; //алфавит по порядку
-    map <char,int> alphaNum; //ассоциативный массив "номер по символу"
-    vector <int> key; //ключ
-    vector<int> convert(const string& s); //преобразование строка-вектор
-    string convert(const vector<int>& v); //преобразование вектор-строка
+        "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"; 
+    map <char,int> alphaNum; 
+    vector <int> key; 
+    vector<int> convert(const string& s); 
+    string convert(const vector<int>& v); 
 public:
-    modAlphaCipher()=delete; //запретим конструктор без параметров
-    modAlphaCipher(const string& skey); //конструктор для установки ключа
-    string encrypt(const string& open_text); //зашифрование
-    string decrypt(const string& cipher_text);//расшифрование
+    modAlphaCipher()=delete; 
+    modAlphaCipher(const string& skey); 
+    string encrypt(const string& open_text); 
+    string decrypt(const string& cipher_text);
 };

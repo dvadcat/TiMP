@@ -12,10 +12,10 @@ using namespace std;
 class modAlphaCipher
 {
 private:
-    int newkey; // количество столбцов таблицы
+    int newkey; 
 public:
     modAlphaCipher()=delete;
-    modAlphaCipher(const int& key) :newkey(key) {};   // конструктор
-    string coder(const string& open_st);   // зашифрование
-    string decoder(const string& cipher_st); // расшифрование 
+    modAlphaCipher(const int& key) :newkey(key) {};   
+    string coder(const string& open_st);  
+    string decoder(const string& cipher_st);
 };
